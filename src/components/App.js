@@ -1,32 +1,44 @@
 import React from "react";
 
-function NavBar() {
+// Define Navbar component
+function Navbar() {
   return (
     <nav>
-      <a href="#home">I'm a link!</a>
+      <h1>My Portfolio</h1>
     </nav>
   );
 }
 
+// Define Home component
 function Home() {
   return (
     <div id="home">
-      <h1>Home</h1>
+      <h2>Home</h2>
+      <p>Welcome to my portfolio site!</p>
     </div>
   );
 }
 
-{/* write an <About> component here */}
+// ✅ Define About component
+function About() {
+  return (
+    <div id="about">
+      <h2>About</h2>
+      <p>This section tells more about me.</p>
+    </div>
+  );
+}
 
-
+// ✅ App component returns all three child components
 function App() {
   return (
     <div>
-      <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+      <Navbar />
+      <Home />
+      <About />
     </div>
   );
 }
 
 export default App;
+
